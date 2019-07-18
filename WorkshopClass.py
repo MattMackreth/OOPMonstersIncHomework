@@ -12,9 +12,11 @@ class Workshop:
     def set_teacher(self, teacher_input):
         self.teacher = teacher_input
 
-    def get_attendees(self):
-
-        return self.monster_attendees_list
+    def get_attendees_names(self):
+        name_list = []
+        for monster in self.monster_attendees_list:
+            name_list.append(monster.name)
+        return name_list
 
     def add_attendee(self, new_attendee):
-        self.monster_attendees_list.append(new_attendee.name)
+        self.monster_attendees_list.append(new_attendee)

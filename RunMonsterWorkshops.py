@@ -1,7 +1,7 @@
 # Run all the code in this file
 # import needed classes
 
-from MonsterClass import *
+
 from WorkshopClass import *
 
 
@@ -13,7 +13,7 @@ Maths = Workshop('Advanced Mathematics')
 # Create some monsters
 Sully = Monster('Sully')
 Mike = Monster('Mike')
-Sinnitta = Monster('Sinnitta')
+Patricia = Monster('Patricia')
 Patch = Monster('Patch')
 
 # Adding Monsters to classes
@@ -22,13 +22,13 @@ Scare.set_teacher(Sully)
 Scare.add_attendee(Patch)
 Scare.add_attendee(Mike)
 
-print(Scare.name, Scare.teacher.name, Scare.get_attendees())
+print(Scare.name, Scare.teacher.name, Scare.get_attendees_names())
 
-Maths.set_teacher(Sinnitta)
+Maths.set_teacher(Patricia)
 Maths.add_attendee(Patch)
 Maths.add_attendee(Sully)
 
-print(Maths.name, Maths.teacher.name, Maths.get_attendees())
+print(Maths.name, Maths.teacher.name, Maths.get_attendees_names())
 
 # Make monsters do some stuff
 
