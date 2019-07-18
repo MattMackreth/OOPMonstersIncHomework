@@ -3,14 +3,19 @@
 #       Add behaviours as individual methods
 from MonsterClass import *
 
+
 class Workshop:
+
     def __init__(self, workshop_name):
         self.name = workshop_name
         self.monster_attendees_list = []
-        self.teacher = Monster()
+        self.teacher = Monster('NO ASSIGNED TEACHER')
 
     def set_teacher(self, teacher_input):
         self.teacher = teacher_input
+
+    def get_teacher(self):
+        return self.teacher
 
     def get_attendees_names(self):
         name_list = []

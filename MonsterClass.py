@@ -19,7 +19,6 @@ class Monster:
 
     def add_skill(self, skill):
         self.skills.append(skill)
-        return self.skills
 
     def get_skills(self):
         return self.skills
